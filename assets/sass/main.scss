@@ -417,3 +417,32 @@ ul li p {
         color: $primary-accent-color;
     }
 }
+
+.color-scheme {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-scheme .label {
+  margin-top: 0;
+}
+
+.language-list {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+}
+
+.language-list li:not(:nth-last-of-type(1)) {
+  border-right: 1px solid rgba(0,0,0,.5);
+}
+
+.language-list li {
+  padding-right: 0.5em;
+}
+
+.main .title {
+  gap: 0.5em;
+}
