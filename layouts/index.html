@@ -8,7 +8,7 @@
     <li class="intro-quote">{{ .Site.Params.main.quote }}</li>
   </ul>
   {{end}}
-  <p>{{ .Site.Params.main.description | safeHTML }}</p>
+  <p>{{ .Content | safeHTML }}</p>
 </div>
 {{ partial "menu.html" . }}
 {{end}}
