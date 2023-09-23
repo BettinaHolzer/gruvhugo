@@ -5,8 +5,8 @@
   </div>
   <div>
     <ul class="language-list">
-      {{ range $.Site.Home.AllTranslations }}
-      <li><a href="{{ .Permalink }}">{{ .Language.LanguageCode }}</a></li>
+      {{ range $.AllTranslations }}
+      <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageCode }}</a></li>
       {{ end }}
     </ul>
   </div>
