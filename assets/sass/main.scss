@@ -446,3 +446,28 @@ ul li p {
 .main .title {
   gap: 0.5em;
 }
+
+h1 {
+  font-size: 2rem;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.35rem;
+}
+
+section h2+p {
+  margin-top: 0;
+}
+
+
+.go-back {
+  color: #076678;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.go-back svg {
+  fill: currentColor;
+}
