@@ -511,3 +511,8 @@ section h2+p {
   align-self: end;
   margin: 0;
 }
+
+img + .intro-quote {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
