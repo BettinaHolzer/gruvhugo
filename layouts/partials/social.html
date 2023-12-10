@@ -1,6 +1,11 @@
 {{ range . -}}
 &nbsp;
-<a href="{{ .url }}" target="_blank" rel="me" title="{{ .name | humanize }}" referrerpolicy="no-referrer">
+{{ $new_page := "" }}
+  {{ if not (eq .name "email") }}
+    {{ $new_page = "_blank" }}
+  {{ end }}
+
+<a href="{{ .url | absLangURL }}" target="{{ $new_page }}" rel="me" title="{{ .name | humanize }}" referrerpolicy="no-referrer">
     {{ partial "svg.html" . }}
 </a>
 &nbsp;
