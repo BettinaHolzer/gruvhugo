@@ -2,10 +2,11 @@
 <div class="intro" style="align-items: center">
   {{if .Site.Params.main.enabled }}
   <img class="image" src='{{ .Site.Params.main.img | absURL }}' 
-	title="{{	.Site.Params.main.img_title }}" width="200px" 
-	alt="Author's picture or avatar or logo"/>
+	title="{{.Site.Params.main.img_title }}" width="200px" 
+	alt="{{.Site.Params.main.img_title }}"/>
+  <span class="intro-quote"><i>{{ .Site.Params.main.quote }}</i></span>
   {{end}}
-  <p>{{ .Content | safeHTML }}</p>
+  {{ .Content | safeHTML }}
 </div>
 {{ partial "menu.html" . }}
 {{end}}

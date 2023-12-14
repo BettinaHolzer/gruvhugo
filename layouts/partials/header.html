@@ -1,7 +1,12 @@
 <div class="title">
   <div class="name">
-    <h2><a href="{{ absLangURL "/" }}"
-	   style="text-decoration: none; color: inherit;">{{ .Site.Params.main.headerTitle }}</a></h2>
+    <h2>
+	<a href="{{ absLangURL "/" }}" style="text-decoration: none; color: inherit;">
+	   <img class="logo" src='{{ .Site.Params.main.icon | absURL }}'
+        	title="{{ .Site.Params.main.icon_title }}" width="200px"
+        	alt="{{ .Site.Params.main.headerTitle }}"/>
+	</a>
+    </h2>
   </div>
   <div>
     <ul class="language-list">
