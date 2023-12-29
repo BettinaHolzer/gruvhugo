@@ -3,5 +3,5 @@
     <div class="social">
         {{ partial "social.html" . }}
     </div><strong>{{- end }}</strong>
-    <p class="copyright">{{ .Site.Params.main.copyright | safeHTML }} <a href="{{ (site.GetPage "impressum").Permalink | safeHTML }}" title="{{ (site.GetPage "impressum").Name }}">{{ (site.GetPage "impressum").Name }}</a></p>
+    <p class="copyright">{{ .Site.Params.main.copyright | safeHTML }} <a href="{{ (site.GetPage "impressum").Permalink | safeHTML }}" title="{{ (site.GetPage "impressum").Name }}">{{ (site.GetPage "impressum").Name }}.</a></p>
 </footer>
